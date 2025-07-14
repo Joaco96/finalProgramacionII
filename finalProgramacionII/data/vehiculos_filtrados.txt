@@ -1,0 +1,4 @@
+Listado filtrado de vehículos:
+--------------------------------
+ID: A1 - Toyota Corolla (2020)
+ID: A2 - Ferrari Spider (2025)
