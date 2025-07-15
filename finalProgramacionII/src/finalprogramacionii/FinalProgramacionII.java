@@ -52,12 +52,12 @@ public class FinalProgramacionII {
         System.out.println("-- Exportaciones --");        
         // Exportar todos los vehículos a un txt
         String rutaGeneral = "data/vehiculos_todos.txt";
-        persistencia.guardarEnArchivo(sistema.leerTodos(), rutaGeneral);
+        sistema.guardarTodo(rutaGeneral);
         
         // Exportar solo los que son instancias de AUTO a un txt filtrando con el test del Predicate
         Predicate<Vehiculo> filtroAutos = v -> v instanceof Auto;
         String rutaFiltrada = "data/vehiculos_filtrados.txt";
-        persistencia.exportarFiltrado(sistema.leerTodos(), filtroAutos, rutaFiltrada);
+        sistema.exportarFiltrado(filtroAutos, rutaFiltrada);
 
         System.out.println("-------------");
         System.out.println("-- Finalizando proyecto --");

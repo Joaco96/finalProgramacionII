@@ -1,5 +1,6 @@
 package finalprogramacionii;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  *
@@ -12,4 +13,6 @@ public interface RepositorioCrud<T> {
     boolean actualizar(String id, T nuevoObjeto);
     boolean eliminar(String id);
     List<T> buscarPorMarca(String marca);
+    void guardarTodo(String ruta);
+    void exportarFiltrado(Predicate<Vehiculo> filtro, String ruta);
 }

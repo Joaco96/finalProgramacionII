@@ -1,6 +1,7 @@
 package finalprogramacionii;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  *
@@ -84,6 +85,16 @@ public class GestionVehiculos implements RepositorioCrud<Vehiculo> {
         }
         // Retornamos el resultado aunque no haya coincidencia, en ese caso sera una lista vacia
         return resultado;
+    }
+    
+    @Override
+    public void guardarTodo(String ruta) {
+        persistencia.guardarEnArchivo(vehiculos, ruta);
+    }
+    
+    @Override
+    public void exportarFiltrado(Predicate<Vehiculo> filtro, String ruta) {
+        persistencia.exportarFiltrado(vehiculos, filtro, ruta);
     }
 
     public List<Vehiculo> getVehiculos() {

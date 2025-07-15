@@ -1,66 +1,69 @@
-<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>616</x><y>484</y><w>198</w><h>176</h></coordinates><panel_attributes>/Vehiculo/
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>539</x><y>506</y><w>198</w><h>176</h></coordinates><panel_attributes>/Vehiculo/
 --
 - id: String
 - marca: String
 - modelo: String
 - año: int
 --
-/+ encender()/
-/+ apagar()/
+/+ encender(): void/
+/+ apagar(): void/
 + toString(): String
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>913</x><y>528</y><w>209</w><h>110</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>836</x><y>550</y><w>209</w><h>110</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 Conducible
 --
 + esConducible(): boolean
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>429</x><y>737</y><w>176</w><h>110</h></coordinates><panel_attributes>_Auto_
+    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>352</x><y>759</y><w>176</w><h>110</h></coordinates><panel_attributes>_Auto_
 --
 - patente: String
 - cantidadPuertas: int
 --
 + esConducible(): boolean
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>638</x><y>737</y><w>176</w><h>110</h></coordinates><panel_attributes>_Moto_
+    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>561</x><y>759</y><w>176</w><h>110</h></coordinates><panel_attributes>_Moto_
 --
 - patente: String
 - cilindrada: int
 --
 + esConducible(): boolean
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>847</x><y>737</y><w>176</w><h>110</h></coordinates><panel_attributes>_Barco_
+    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>759</y><w>176</w><h>110</h></coordinates><panel_attributes>_Barco_
 --
 - nombre: String
 - esDeCarga: boolean
 --
 + esConducible(): boolean
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>253</y><w>275</w><h>154</h></coordinates><panel_attributes>_GestionVehiculos_
+    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>319</x><y>242</y><w>275</w><h>187</h></coordinates><panel_attributes>_GestionVehiculos_
 --
-- vehiculos: ArrayList&lt;Vehiculo&gt;
+- vehiculos: List&lt;Vehiculo&gt;
 - persistencia: Persistencia
 --
 + crear(Vehiculo): void
 + leerTodos(): List&lt;Vehiculo&gt;
-+ actualizar(id: String, Vehiculo): void
-+ eliminar(id: String): void
++ actualizar(id: String, Vehiculo): boolean
++ eliminar(id: String): boolean
 + buscarPorMarca(String): List&lt;Vehiculo&gt;
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>726</x><y>253</y><w>330</w><h>154</h></coordinates><panel_attributes>PersistenciaArchivo
++ guardarTodo(String): void
++ exportarFiltrado(filtro, String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>649</x><y>275</y><w>363</w><h>132</h></coordinates><panel_attributes>PersistenciaArchivo
 --
-+ guardarEnArchivo(List&lt;Vehiculo&gt;, String ruta)
-+ leerDesdeArchivo(String ruta)
-+ exportarFiltrado(List&lt;Vehiculo&gt;, filtro, String ruta)
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>572</x><y>649</y><w>154</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>649</y><w>33</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>715</x><y>649</y><w>176</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;80</additional_attributes></element><element><id>Relation</id><coordinates><x>803</x><y>561</y><w>132</w><h>33</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>396</y><w>55</w><h>110</h></coordinates><panel_attributes>lt=.&gt;
-</panel_attributes><additional_attributes>30;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>726</x><y>44</y><w>341</w><h>154</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
++ guardarEnArchivo(List&lt;Vehiculo&gt;, String): void
++ leerDesdeArchivo(String ruta): List&lt;Vehiculo&gt;
++ exportarFiltrado(List&lt;Vehiculo&gt;, filtro, String): void
+    </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>671</y><w>154</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>671</y><w>33</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>638</x><y>671</y><w>176</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;80</additional_attributes></element><element><id>Relation</id><coordinates><x>726</x><y>583</y><w>132</w><h>33</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>396</y><w>55</w><h>132</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>30;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>649</x><y>55</y><w>363</w><h>143</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 /Persistencia/
 --
-+ guardarEnArchivo(List&lt;Vehiculo&gt;, String ruta)
-+ leerDesdeArchivo(String ruta)
-+ exportarFiltrado(List&lt;Vehiculo&gt;, filtro, String ruta)
-    </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>858</x><y>187</y><w>33</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>396</y><w>99</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
++ guardarEnArchivo(List&lt;Vehiculo&gt;, String): void
++ leerDesdeArchivo(String ruta): List&lt;Vehiculo&gt;
++ exportarFiltrado(List&lt;Vehiculo&gt;, filtro, String): void
+    </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>781</x><y>187</y><w>33</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>418</y><w>99</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
 vehiculos
-m1=0..n</panel_attributes><additional_attributes>20;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>638</x><y>154</y><w>110</w><h>121</h></coordinates><panel_attributes>lt=.&gt;
-</panel_attributes><additional_attributes>10;90;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>506</x><y>187</y><w>33</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>44</y><w>275</w><h>154</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+m1=0..n</panel_attributes><additional_attributes>20;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>561</x><y>165</y><w>110</w><h>99</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;70;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>429</x><y>187</y><w>33</w><h>77</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>319</x><y>33</y><w>275</w><h>165</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 /RepositorioCrud/
 --
 + crear(Vehiculo): void
 + leerTodos(): List&lt;Vehiculo&gt;
-+ actualizar(id: String, Vehiculo): void
-+ eliminar(id: String): void
++ actualizar(id: String, Vehiculo): boolean
++ eliminar(id: String): boolean
 + buscarPorMarca(String): List&lt;Vehiculo&gt;
++ guardarTodo(String): void
++ exportarFiltrado(filtro, String): void
     </panel_attributes><additional_attributes></additional_attributes></element></diagram>
