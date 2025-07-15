@@ -85,7 +85,7 @@ GestionVehiculos sistema = new GestionVehiculos(persistencia);
 sistema.crear(new Auto("A1", "Toyota", "Corolla", 2020, "ABC123", 4));
 sistema.crear(new Moto("M1", "Yamaha", "R3", 2021, "XYZ789", 300));
 
-// Todos los vehiculos
+// Devuelve todos los vehiculos
 sistema.leerTodos();
 
 // Realizar la busqueda por marca de vehiculo
