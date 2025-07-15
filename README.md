@@ -66,7 +66,7 @@ uml_gestion_vehiculos.uxf
 ## Modelado UML (resumen)
 
 - `Vehiculo` (abstracta) → subclases: `Auto`, `Moto`, `Barco`
-- `Conducible` → interfaz implementada por vehículos manejables
+- `Conducible` → interfaz implementada por vehículos
 - `RepositorioCrud<T>` → interfaz genérica para operaciones CRUD
 - `GestionVehiculos` → clase que implementa el CRUD
 - `Persistencia` → interfaz para guardar y cargar archivos
