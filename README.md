@@ -132,10 +132,10 @@ Barco;B1;Yamaha;WaveRunner;2019;Poseidón;false
 ---
 
 ## Capturas
-![Diagrama UML](data/uml_gestion_vehiculos.png)
-![Ejemplo de ejecucion](data/ejemplo_ejecucion.png)
-![Archivo lectura y escritura](data/archivo_lectura_escritura.png)
-![Archivo exportacion](data/archivo_exportacion_filtrado.png)
+![Diagrama UML](finalProgramacionII/data/uml_gestion_vehiculos.png)
+![Ejemplo de ejecucion](finalProgramacionII/data/ejemplo_ejecucion.png)
+![Archivo lectura y escritura](finalProgramacionII/data/archivo_lectura_escritura.png)
+![Archivo exportacion](finalProgramacionII/data/archivo_exportacion_filtrado.png)
 
 ---
 
