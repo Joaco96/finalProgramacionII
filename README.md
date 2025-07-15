@@ -4,7 +4,7 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
 
 ---
 
-## Contenidos
+## Indice
 
 - [Características](#características)
 - [Tecnologías usadas](#tecnologías-usadas)
