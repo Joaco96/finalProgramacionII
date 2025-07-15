@@ -27,16 +27,14 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
 
 ---
 
-## Tecnologías Usadas
+## Tecnologías usadas
 
-- Java SE 24
-- Apache NetBeans IDE 26
-- Estándar Java con Ant (no Maven/Gradle)
+- Java con Ant
 - Serialización manual vía texto (`.txt`)
 
 ---
 
-## Estructura del Proyecto
+## Estructura del proyecto
 
 ```
 /finalProgramacionII
@@ -76,7 +74,7 @@ uml_gestion_vehiculos.uxf
 
 ---
 
-## Ejemplo de Funcionamiento
+## Ejemplo de funcionamiento
 
 ```java
 // Crear persistencia y gestor
@@ -101,7 +99,7 @@ sistema.actualizar("A1", nuevoVehiculo);
 sistema.eliminar("A2");
 
 // Exportar todos los vehículos a un txt
-sistema.guardarEnArchivo(sistema.getVehiculos(), "data/vehiculos.txt");
+sistema.guardarEnArchivo(sistema.leerTodos(), "data/vehiculos.txt");
 
 // Exportar solo los que son instancias de AUTO a un txt filtrando con el test del Predicate
 Predicate<Vehiculo> filtroAutos = v -> v instanceof Auto;
@@ -126,7 +124,7 @@ Barco;B1;Yamaha;WaveRunner;2019;Poseidón;false
 
 ---
 
-## Cómo Ejecutar el proyecto
+## Cómo ejecutar el proyecto
 1 - Abrir el proyecto
 
 2 - Asegurarse de tener creada la carpeta /data en la raíz
