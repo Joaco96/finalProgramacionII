@@ -39,22 +39,28 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
 ## Estructura del Proyecto
 
 ```
-/src
-└─── Main.java
-└─── Vehiculo.java (abstracta)
-└─── Auto.java
-└─── Moto.java
-└─── Barco.java
-└─── Conducible.java
-└─── RepositorioCrud.java
-└─── GestionVehiculos.java
-└─── Persistencia.java
-└─── PersistenciaArchivo.java
-/data
-└─── vehiculos.txt
-└─── vehiculos_filtrados.txt
-└─── vehiculos.txt
-└─── vehiculos_filtrados.txt
+/finalProgramacionII
+│───/src
+│     └─── Main.java
+│     └─── Vehiculo.java (abstracta)
+│     └─── Auto.java
+│     └─── Moto.java
+│     └─── Barco.java
+│     └─── Conducible.java
+│     └─── RepositorioCrud.java
+│     └─── GestionVehiculos.java
+│     └─── Persistencia.java
+│     └─── PersistenciaArchivo.java
+└───/data
+      └─── vehiculos.txt
+      └─── vehiculos_filtrados.txt
+/imagenes
+   └─── archivo_exportacion_filtrado.png
+   └─── archivo_lectura_escritura.png
+   └─── ejemplo_ejecucion.png
+   └─── uml_gestion_vehiculos.png
+README.md
+uml_gestion_vehiculos.uxf
 ```
 
 ---
@@ -132,10 +138,10 @@ Barco;B1;Yamaha;WaveRunner;2019;Poseidón;false
 ---
 
 ## Capturas
-![Diagrama UML](finalProgramacionII/data/uml_gestion_vehiculos.png)
-![Ejemplo de ejecucion](finalProgramacionII/data/ejemplo_ejecucion.png)
-![Archivo lectura y escritura](finalProgramacionII/data/archivo_lectura_escritura.png)
-![Archivo exportacion](finalProgramacionII/data/archivo_exportacion_filtrado.png)
+![Diagrama UML](imagenes/uml_gestion_vehiculos.png)
+![Ejemplo de ejecucion](imagenes/ejemplo_ejecucion.png)
+![Archivo lectura y escritura](imagenes/archivo_lectura_escritura.png)
+![Archivo exportacion](imagenes/archivo_exportacion_filtrado.png)
 
 ---
 
