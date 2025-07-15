@@ -1,3 +1,4 @@
 Auto;A1;Toyota;Corolla;2020;ABC123;4
 Moto;M1;Yamaha;R3;2021;XYZ789;300
 Barco;B1;Yamaha;WaveRunner;2018;Poseidón;false
+Auto;A2;Toyota;Yaris;2024;XYZ766;4

@@ -66,7 +66,7 @@ public class GestionVehiculos implements RepositorioCrud<Vehiculo> {
         boolean eliminado = vehiculos.removeIf(v -> v.getId().equals(id));
         // El metodo devuelve un booleano de exito, si no encontro ID 
         if(eliminado){
-            System.out.println("Vehiculo eliminado exitosamente");
+            System.out.println("Vehiculo eliminado con ID: " + id);
         } else {
             System.out.println("No se pudo eliminar el vehiculo");
         }

@@ -52,7 +52,7 @@ public class FinalProgramacionII {
         System.out.println("-- Exportaciones --");        
         // Exportar todos los vehículos a un txt
         String rutaGeneral = "data/vehiculos_todos.txt";
-        persistencia.guardarEnArchivo(sistema.getVehiculos(), rutaGeneral);
+        persistencia.guardarEnArchivo(sistema.leerTodos(), rutaGeneral);
         
         // Exportar solo los que son instancias de AUTO a un txt filtrando con el test del Predicate
         Predicate<Vehiculo> filtroAutos = v -> v instanceof Auto;
