@@ -19,11 +19,11 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
 
 ## Características
 
-✔️ Gestión de entidades con herencia  
-✔️ CRUD completo sobre vehículos  
-✔️ Interfaz genérica para repositorio  
-✔️ Persistencia en archivos `.txt` legibles  
-✔️ Exportación filtrada a archivos  
+- Gestión de entidades con herencia  
+- CRUD completo sobre vehículos  
+- Interfaz genérica para repositorio  
+- Persistencia en archivos `.txt` legibles  
+- Exportación filtrada a archivos  
 
 ---
 
@@ -147,10 +147,10 @@ Barco;B1;Yamaha;WaveRunner;2019;Poseidón;false
 
 ## Autor
 
-Joaquin Cortés
-Legajo - 116257
+- Joaquin Cortés
+- Legajo - 116257
 
-Programación II - 2C 2024
-Profesor: Marcelo Espinosa
+- Programación II - 2C 2024
+- Profesor: Marcelo Espinosa
 
 Año 2025
