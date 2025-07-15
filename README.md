@@ -99,11 +99,11 @@ sistema.actualizar("A1", nuevoVehiculo);
 sistema.eliminar("A2");
 
 // Exportar todos los vehículos a un txt
-sistema.guardarEnArchivo(sistema.leerTodos(), "data/vehiculos.txt");
+sistema.guardarTodo(rutaGeneral);
 
 // Exportar solo los que son instancias de AUTO a un txt filtrando con el test del Predicate
 Predicate<Vehiculo> filtroAutos = v -> v instanceof Auto;
-persistencia.exportarFiltrado(sistema.leerTodos(), filtroAutos, "data/vehiculos.txt");
+sistema.exportarFiltrado(filtroAutos, rutaFiltrada);
 
 ```
 
