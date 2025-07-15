@@ -39,8 +39,8 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
 ```
 /finalProgramacionII
 │───/src
-│     └─── Main.java
-│     └─── Vehiculo.java (abstracta)
+│     └─── FinalProgramacionII.java
+│     └─── Vehiculo.java
 │     └─── Auto.java
 │     └─── Moto.java
 │     └─── Barco.java
@@ -129,7 +129,7 @@ Barco;B1;Yamaha;WaveRunner;2019;Poseidón;false
 
 2 - Asegurarse de tener creada la carpeta /data en la raíz
 
-3 - Ejecutar el archivo Main.java
+3 - Ejecutar el archivo FinalProgramacionII.java
 
 4 - Ver los resultados en consola y archivos .txt generados
 
