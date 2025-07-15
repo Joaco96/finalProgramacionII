@@ -12,7 +12,7 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
 - [Modelado UML](#modelado-uml)
 - [Ejemplo de Funcionamiento](#ejemplo-de-funcionamiento)
 - [Persistencia en TXT](#persistencia-en-txt)
-- [Cómo Ejecutar](#cómo-ejecutar)
+- [Cómo Ejecutar](#cómo-ejecutar-el-proyecto)
 - [Capturas](#capturas)
 
 ---
