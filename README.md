@@ -7,12 +7,12 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
 ## Contenidos
 
 - [Características](#características)
-- [Tecnologías Usadas](#tecnologías-usadas)
-- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Tecnologías usadas](#tecnologías-usadas)
+- [Estructura del proyecto](#estructura-del-proyecto)
 - [Modelado UML](#modelado-uml)
-- [Ejemplo de Funcionamiento](#ejemplo-de-funcionamiento)
+- [Ejemplo de funcionamiento](#ejemplo-de-funcionamiento)
 - [Persistencia en TXT](#persistencia-en-txt)
-- [Cómo Ejecutar](#cómo-ejecutar-el-proyecto)
+- [Cómo ejecutar](#cómo-ejecutar-el-proyecto)
 - [Capturas](#capturas)
 
 ---
