@@ -15,13 +15,13 @@ public class FinalProgramacionII {
         GestionVehiculos sistema = new GestionVehiculos(persistencia);
 
         System.out.println("-------------");
-//      // Crear vehículos
+        // Crear vehículos
 //      Vehiculo auto = new Auto("A1", "Toyota", "Corolla", 2020, "ABC123", 4);
         Vehiculo moto = new Moto("M1", "Yamaha", "R3", 2021, "XYZ789", 300);
 //      Vehiculo barco = new Barco("B1", "Yamaha", "WaveRunner", 2018, "Poseidón", false);
 
         System.out.println("-- Crear vehiculo --");
-//      // Agregar al sistema
+        // Agregar al sistema
 //      sistema.crear(auto);
         sistema.crear(moto);
 //      sistema.crear(barco);
@@ -54,7 +54,7 @@ public class FinalProgramacionII {
         String rutaGeneral = "data/vehiculos_todos.txt";
         sistema.guardarTodo(rutaGeneral);
         
-        // Exportar solo los que son instancias de AUTO a un txt filtrando con el test del Predicate
+        // Exportar solo los que son instancias de AUTO por ejemplo a un txt filtrando con el test del Predicate
         Predicate<Vehiculo> filtroAutos = v -> v instanceof Auto;
         String rutaFiltrada = "data/vehiculos_filtrados.txt";
         sistema.exportarFiltrado(filtroAutos, rutaFiltrada);

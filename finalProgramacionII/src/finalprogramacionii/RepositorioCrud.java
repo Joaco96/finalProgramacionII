@@ -14,5 +14,5 @@ public interface RepositorioCrud<T> {
     boolean eliminar(String id);
     List<T> buscarPorMarca(String marca);
     void guardarTodo(String ruta);
-    void exportarFiltrado(Predicate<Vehiculo> filtro, String ruta);
+    void exportarFiltrado(Predicate<T> filtro, String ruta);
 }

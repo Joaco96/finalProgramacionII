@@ -9,7 +9,7 @@ import java.util.function.Predicate;
  * @author joaco
  */
 
-public class PersistenciaArchivo implements Persistencia {
+public class PersistenciaArchivo implements Persistencia<Vehiculo> {
     @Override
     public void guardarEnArchivo(List<Vehiculo> vehiculos, String ruta) {
         // Intentamos abrir un PrintWriter con FileWriter para escribir en el archivo de texto

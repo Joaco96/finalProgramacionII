@@ -27,7 +27,7 @@ public abstract class Vehiculo implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("ID: %s - %s %s (%d)", id, marca, modelo, anio);
+        return "ID: " + id + " - " + marca + " " + modelo + " (" + anio + ")";
     }
 
     public String getId() {

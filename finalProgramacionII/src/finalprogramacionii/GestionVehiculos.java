@@ -89,11 +89,13 @@ public class GestionVehiculos implements RepositorioCrud<Vehiculo> {
     
     @Override
     public void guardarTodo(String ruta) {
+        // Persistimos los datos con la dependencia
         persistencia.guardarEnArchivo(vehiculos, ruta);
     }
     
     @Override
     public void exportarFiltrado(Predicate<Vehiculo> filtro, String ruta) {
+        // Exportamos los datos filtrados con la dependencia
         persistencia.exportarFiltrado(vehiculos, filtro, ruta);
     }
 
