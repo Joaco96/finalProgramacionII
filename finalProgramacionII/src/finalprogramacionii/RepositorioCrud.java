@@ -10,7 +10,7 @@ public interface RepositorioCrud<T> {
     // Metodos de Crud
     void crear(T objeto);
     List<T> leerTodos();
-    boolean actualizar(String id, T nuevoObjeto);
+    boolean actualizar(T nuevoObjeto);
     boolean eliminar(String id);
     List<T> buscarPorMarca(String marca);
     void guardarTodo(String ruta);

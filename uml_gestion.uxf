@@ -37,8 +37,8 @@ Conducible
 --
 + crear(Vehiculo): void
 + leerTodos(): List&lt;Vehiculo&gt;
-+ actualizar(id: String, Vehiculo): boolean
-+ eliminar(id: String): boolean
++ actualizar(Vehiculo): boolean
++ eliminar(String): boolean
 + buscarPorMarca(String): List&lt;Vehiculo&gt;
 + guardarTodo(String): void
 + exportarFiltrado(filtro, String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>649</x><y>275</y><w>363</w><h>132</h></coordinates><panel_attributes>PersistenciaArchivo
@@ -61,8 +61,8 @@ m1=0..n</panel_attributes><additional_attributes>20;80;10;10</additional_attribu
 --
 + crear(Vehiculo): void
 + leerTodos(): List&lt;Vehiculo&gt;
-+ actualizar(id: String, Vehiculo): boolean
-+ eliminar(id: String): boolean
++ actualizar(Vehiculo): boolean
++ eliminar(String): boolean
 + buscarPorMarca(String): List&lt;Vehiculo&gt;
 + guardarTodo(String): void
 + exportarFiltrado(filtro, String): void

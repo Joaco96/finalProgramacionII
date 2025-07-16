@@ -56,9 +56,9 @@ Este proyecto implementa un sistema en Java orientado a objetos para gestionar v
    └─── archivo_exportacion_filtrado.png
    └─── archivo_lectura_escritura.png
    └─── ejemplo_ejecucion.png
-   └─── uml_gestion_vehiculos.png
+   └─── uml_gestion.png
 README.md
-uml_gestion_vehiculos.uxf
+uml_gestion.uxf
 ```
 
 ---
@@ -82,8 +82,9 @@ Persistencia persistencia = new PersistenciaArchivo();
 GestionVehiculos sistema = new GestionVehiculos(persistencia);
 
 // Crear vehiculos
-sistema.crear(new Auto("A1", "Toyota", "Corolla", 2020, "ABC123", 4));
-sistema.crear(new Moto("M1", "Yamaha", "R3", 2021, "XYZ789", 300));
+Vehiculo auto = new Auto("A1", "Toyota", "Corolla", 2020, "ABC123", 4);
+Vehiculo moto = new Moto("M1", "Yamaha", "R3", 2021, "XYZ789", 300);
+Vehiculo barco = new Barco("B1", "Yamaha", "WaveRunner", 2018, "Poseidón", false);
 
 // Devuelve todos los vehiculos
 sistema.leerTodos();
@@ -92,8 +93,8 @@ sistema.leerTodos();
 sistema.buscarPorMarca("Toyota");
 
 // Actualiza un vehiculo, sin dejar que se duplique el id si se modifica
-Vehiculo nuevoVehiculo = new Auto("A2", "Toyota", "Yaris", 2024, "XYZ787", 4);        
-sistema.actualizar("A1", nuevoVehiculo);
+Vehiculo nuevoVehiculo = new Auto("A1", "Toyota", "Etios", 2024, "XYZ787", 4);         
+sistema.actualizar(nuevoVehiculo);
 
 // Elimina un vehiculo si encuentra el id
 sistema.eliminar("A2");
@@ -101,7 +102,7 @@ sistema.eliminar("A2");
 // Exportar todos los vehículos a un txt
 sistema.guardarTodo(rutaGeneral);
 
-// Exportar solo los que son instancias de AUTO a un txt filtrando con el test del Predicate
+// Exportar solo los que son instancias de AUTO por ejemplo a un txt filtrando con el test del Predicate
 Predicate<Vehiculo> filtroAutos = v -> v instanceof Auto;
 sistema.exportarFiltrado(filtroAutos, rutaFiltrada);
 
@@ -136,7 +137,7 @@ Barco;B1;Yamaha;WaveRunner;2019;Poseidón;false
 ---
 
 ## Capturas
-![Diagrama UML](imagenes/imagen_uml.png)
+![Diagrama UML](imagenes/uml_gestion.png)
 ![Ejemplo de ejecucion](imagenes/ejemplo_ejecucion.png)
 ![Archivo lectura y escritura](imagenes/archivo_lectura_escritura.png)
 ![Archivo exportacion](imagenes/archivo_exportacion_filtrado.png)

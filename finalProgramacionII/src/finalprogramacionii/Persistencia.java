@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 public interface Persistencia<T> {
     // Metodos de Persistencia de los datos
     void guardarEnArchivo(List<T> objetos, String ruta);
-    List<Vehiculo> leerDesdeArchivo(String ruta);
+    List<T> leerDesdeArchivo(String ruta);
     // El Predicate permite pasar un test como filtro para la exportación
     void exportarFiltrado(List<T> objetos, Predicate<T> filtro, String ruta);
 }

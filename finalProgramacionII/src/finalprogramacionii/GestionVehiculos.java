@@ -40,17 +40,10 @@ public class GestionVehiculos implements RepositorioCrud<Vehiculo> {
     }
 
     @Override
-    public boolean actualizar(String id, Vehiculo nuevoVehiculo) {
-        // Verifica si el ID nuevo ya existe en otro objeto antes de actualizar por si existe en un lugar posterior al de la actualizacion
-        for (Vehiculo v : vehiculos) {
-            if (v.getId().equals(nuevoVehiculo.getId()) && !v.getId().equals(id)) {
-                System.out.println("Ya existe un vehiculo con ID: " + nuevoVehiculo.getId());
-                return false;
-            }
-        }
-        // Reemplaza si se encuentra el ID original
+    public boolean actualizar(Vehiculo nuevoVehiculo) {
+        // Reemplaza si se encuentra el ID
         for (int i = 0; i < vehiculos.size(); i++) {
-            if (vehiculos.get(i).getId().equals(id)) {
+            if (vehiculos.get(i).getId().equals(nuevoVehiculo.getId())) {
                 vehiculos.set(i, nuevoVehiculo);
                 System.out.println("Vehiculo actualizado exitosamente");
                 return true;
