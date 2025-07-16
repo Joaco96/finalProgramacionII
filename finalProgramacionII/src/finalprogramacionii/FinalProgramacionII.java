@@ -16,15 +16,15 @@ public class FinalProgramacionII {
 
         System.out.println("-------------");
         // Crear vehículos
-        Vehiculo auto = new Auto("A1", "Toyota", "Corolla", 2020, "ABC123", 4);
+//      Vehiculo auto = new Auto("A1", "Toyota", "Corolla", 2020, "ABC123", 4);
         Vehiculo moto = new Moto("M1", "Yamaha", "R3", 2021, "XYZ789", 300);
-        Vehiculo barco = new Barco("B1", "Yamaha", "WaveRunner", 2018, "Poseidón", false);
+//      Vehiculo barco = new Barco("B1", "Yamaha", "WaveRunner", 2018, "Poseidón", false);
 
         System.out.println("-- Crear vehiculo --");
         // Agregar al sistema
-        sistema.crear(auto);
+//      sistema.crear(auto);
         sistema.crear(moto);
-        sistema.crear(barco);
+//      sistema.crear(barco);
         System.out.println("-------------");
 
         System.out.println("-- Todos los vehiculos --");
@@ -38,7 +38,7 @@ public class FinalProgramacionII {
         
         // Actualiza un vehiculo
         System.out.println("-- Actualizar vehiculo --");
-        Vehiculo nuevoVehiculo = new Auto("A1", "Toyota", "Etios", 2024, "XYZ787", 4);        
+        Vehiculo nuevoVehiculo = new Auto("A4", "Toyota", "Etios", 2024, "XYZ787", 4);        
         sistema.actualizar(nuevoVehiculo);
         System.out.println(sistema.leerTodos());
         System.out.println("-------------");

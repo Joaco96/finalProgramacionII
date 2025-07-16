@@ -30,6 +30,7 @@ public class GestionVehiculos implements RepositorioCrud<Vehiculo> {
         }
         // Si no encontro ninguna coincidencia de ID se crea el nuevo vehiculo
         if(!idExiste){
+            System.out.println("Vehiculos creado con exitocon ID: " + nuevoVehiculo.getId());
             vehiculos.add(nuevoVehiculo);
         }
     }

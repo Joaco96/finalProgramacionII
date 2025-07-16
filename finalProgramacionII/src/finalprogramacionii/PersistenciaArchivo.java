@@ -81,7 +81,7 @@ public class PersistenciaArchivo implements Persistencia<Vehiculo> {
             }
 
             System.out.println("Vehiculos cargados desde txt");
-        } catch (IOException | NumberFormatException e) {
+        } catch (IOException | IllegalArgumentException e) {
             System.out.println("Error al leer archivo txt: " + e.getMessage());
         }
         // Devolvemos la lista de vehículos construida
